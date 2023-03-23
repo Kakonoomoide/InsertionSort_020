@@ -30,16 +30,21 @@ void  input() {
 }
 
 void insertionsort() {
-    int i, key, j;                                           // Mendeklarasikan variable
-    for (i = 1; i < n; i++){
+    int key, j;                                           // Mendeklarasikan variable
+    for (int i = 1; i < n; i++){                                 // looping untuk menyimpan variable ke temp
         key = arr[i];
         j = i - 1;
 
-        while (j >= 0 && arr[j] > key){
+        while (j >= 0 && arr[j] > key){                      // menyimpan array temp ke array j
             arr[j + 1] = arr[j];
             j --;
         }
         arr[j + 1] = key;
+
+        cout << "\nStep " << i << ": ";
+        for (int k = 0; k < n; k++) {                                // looping memasukan data ke array
+            cout << arr[k] << endl;
+        }
     }
 }
 
