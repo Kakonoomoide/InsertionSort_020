@@ -24,7 +24,7 @@ void  input() {
 
     for (int i = 0; i < n; i++) {                                // looping memasukan data ke array
         cout << "masukan data ke-" << (i + 1) << ":";
-        cin >> a[i];
+        cin >> arr[i];
     }
 
 }
