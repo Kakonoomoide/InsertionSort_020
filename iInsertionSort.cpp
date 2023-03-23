@@ -43,6 +43,18 @@ void insertionsort() {
     }
 }
 
+void display() {
+    cout << endl;
+    cout << "=================================" << endl;
+    cout << "element array yang telah tersusun" << endl;
+    cout << "=================================" << endl;
+
+    for (int j = 0; j < n; j++) {                                // looping memasukan data ke array
+        cout << a[j] << endl;
+    }
+}
+
+
 int main() {
 
 }
