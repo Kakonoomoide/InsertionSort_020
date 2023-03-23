@@ -50,11 +50,14 @@ void display() {
     cout << "=================================" << endl;
 
     for (int j = 0; j < n; j++) {                                // looping memasukan data ke array
-        cout << a[j] << endl;
+        cout << arr[j] << endl;
     }
 }
 
 
 int main() {
-
+    input();
+    insertionsort();
+    display();
+    return  0;
 }
